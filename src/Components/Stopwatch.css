@@ -1,0 +1,102 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Stopwatch container */
+  .stopwatch {
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .stopwatch h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333333;
+  }
+  
+  .time-display {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222222;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .reset {
+    background-color: #ff6666;
+    color: #ffffff;
+  }
+  
+  .reset:hover {
+    background-color: #ff4d4d;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .stopwatch {
+      padding: 15px 20px;
+    }
+  
+    .stopwatch h1 {
+      font-size: 1.5rem;
+    }
+  
+    .time-display {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stopwatch {
+      width: 90%;
+      padding: 10px 15px;
+    }
+  
+    .stopwatch h1 {
+      font-size: 1.2rem;
+    }
+  
+    .time-display {
+      font-size: 1.5rem;
+    }
+  
+    .btn {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
+  
